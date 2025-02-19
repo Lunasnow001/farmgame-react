@@ -95,7 +95,7 @@ export default function FarmGame() {
 
   return (
     <>
-      <div className="flex flex-col justify-center items-center bg-green-100 p-4 min-h-screen">
+      <div className="flex flex-col justify-center items-center bg-green-100 mx-auto p-4 min-h-screen container">
         <h1 className="mb-4 font-bold text-3xl">Farm Game 🌱</h1>
         <p className="mb-4 text-lg">Money: 💰 {money}</p>
         <button
@@ -201,7 +201,7 @@ export default function FarmGame() {
               <p className="">✅ อัปเกรดฟีเจอร์ใหม่</p>
               <ul className="mb-4 border-b">
                 <li className="p-1">
-                  ระบบเงิน 💰: ผู้เล่นมีเงินเริ่มต้น {money} บาท
+                  ระบบเงิน 💰: ผู้เล่นมีเงินเริ่มต้น 100 บาท
                   และสามารถใช้เงินซื้อพืชและสัตว์เลี้ยง
                 </li>
                 <li className="p-1">
