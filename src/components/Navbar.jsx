@@ -20,16 +20,13 @@ const Navbar = () => {
             <Link to="/farmgame">Farm Game</Link>
           </li>
           <li className="md:mx-4 my-2">
-            <a href="#">Feature</a>
+            <a href="#">Tic Tac Toe</a>
+          </li>
+          <li className="md:mx-4 my-2">
+            <a href="#">Picture matching game</a>
           </li>
           <li className="md:mx-4 my-2">
             <a href="#">Product</a>
-          </li>
-          <li className="md:mx-4 my-2">
-            <a href="#">Testimonial</a>
-          </li>
-          <li className="md:mx-4 my-2">
-            <a href="#">FAQ</a>
           </li>
         </ul>
 
