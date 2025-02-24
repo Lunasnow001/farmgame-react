@@ -23,7 +23,7 @@ const Navbar = () => {
             <a href="#">Tic Tac Toe</a>
           </li>
           <li className="md:mx-4 my-2">
-            <a href="#">Picture matching game</a>
+            <a href="/memorygame">MemoryGame</a>
           </li>
           <li className="md:mx-4 my-2">
             <a href="#">Product</a>
