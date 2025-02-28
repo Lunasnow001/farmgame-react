@@ -20,6 +20,15 @@ export default function SnakeGame() {
     };
   }
 
+  const resetGame = () => {
+    setSnake(INITIAL_SNAKE);
+    setDirection(INITIAL_DIRECTION);
+    setFood(generateFood());
+    setIsGameOver(false);
+    setScore(0);
+    setSpeed(SPEED_LEVELS[0]);
+  };
+
   const moveSnake = useCallback(() => {
     if (isGameOver) return;
     setSnake((prev) => {
@@ -85,7 +94,12 @@ export default function SnakeGame() {
           <div key={index} className="absolute bg-green-500 w-5 h-5" style={{ left: segment.x * 20, top: segment.y * 20 }}></div>
         ))}
         <div className="absolute bg-red-500 w-5 h-5" style={{ left: food.x * 20, top: food.y * 20 }}></div>
-        {isGameOver && <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 text-white text-2xl">Game Over</div>}
+        {isGameOver && (
+          <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 text-white text-2xl">
+            <div>Game Over</div>
+            <button className="bg-blue-500 mt-4 px-4 py-2 rounded" onClick={resetGame}>Restart Game</button>
+          </div>
+        )}
       </div>
     </div>
   );
