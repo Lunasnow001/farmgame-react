@@ -5,6 +5,7 @@ import Gamelayout from "./pages/Gamelayout";
 import Home from "./pages/Home";
 import FarmGame from "./components/FarmGame";
 import MemoryGame from "./components/MemoryGame";
+import SnakeGame from "./components/SnakeGame";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="farmgame" element={<FarmGame />} />
             <Route path="memorygame" element={<MemoryGame />} />
+            <Route path="snakegame" element={<SnakeGame />} />
           </Route>
         </Routes>
       </BrowserRouter>
